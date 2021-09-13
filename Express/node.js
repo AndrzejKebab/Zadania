@@ -18,6 +18,7 @@ setTimeout(function() {
   }, 3000);
 console.log('Second');
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.all('/secret', function(req, res, next) {
+  console.log('Accessing the secret section ...');
+  next(); // pass control to the next handler
 });
