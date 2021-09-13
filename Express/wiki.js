@@ -13,8 +13,4 @@ router.get('/about', function(req, res) {
   res.send('About this wiki');
 });
 
-router.get('/yomamma', function(req, res) {
-    res.send('yo momma is fat');
-  });
-
 module.exports = router;
