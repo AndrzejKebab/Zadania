@@ -17,3 +17,7 @@ setTimeout(function() {
   console.log('First');
   }, 3000);
 console.log('Second');
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+});
