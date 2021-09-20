@@ -17,18 +17,18 @@ app.get('/', (req, res) => {
 
 app.get('/omnie', (req, res) => {
     //res.send("Informatyk weekendowy");
-    app.render('omnie',{
+    res.render('omnie', {
         pageTitle: 'O mnie'
     });
 });
 
 app.get('/kontakt', (req, res) => {
     //res.send("Kontak 225 333 695");
-    res,render('kontakt', {
+    res.render('kontakt', {
         pageTitle: 'Kontatk'
     });
 });
 
 app.listen(5000, () => {
     console.log("Serwer Działa! AuAu");
-});
+}); 
